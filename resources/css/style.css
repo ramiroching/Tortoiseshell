@@ -1,8 +1,7 @@
 html, body{
-  text-align: center;
   font-family: Helvetica;
   font-size: 1rem;
-  color: white;
+  color: black;
   margin: 0;
   font-size: 18px;
   display: block;
@@ -16,9 +15,9 @@ html, body{
 
 .main-banner{
   background-image: url("../images/glasses-bg.png");
-  background-repeat: no-repeat;
   background-size: cover;
-  height: 40rem;
+  background-position: center;
+  height: 30rem;
 }
 
 .bannerbox{
@@ -27,17 +26,103 @@ html, body{
   top: 2rem;
   position: relative;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 .bannerlogo{
   display: flex;
 }
 .bannerlogo img{
 height: 1.5rem;
+margin-left: 2rem;
 }
 nav span{
 padding-right: 1rem;
+color: white;
 }
 .bannerlogo span{
   padding-left: 1rem;
+  color: white;
+}
+.bannertext{
+  margin-top: 9rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.bannertext h1{
+  background-color: white;
+  color: black;
+  padding: 3rem;
+}
+.services{
+  display: flex;
+  justify-content: center;
+}
+.service{
+  display: flex;
+  flex-direction:column;
+  margin: 3rem;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.service img.paper{
+  width: 3.5rem;
+  margin-bottom: 1rem;
+}
+.service img{
+  width: 5rem;
+}
+
+.contactinfo{
+  display: flex;
+  margin-top: 4rem;
+  justify-content: space-between;
+}
+
+.contactinfo h4{
+  background-color: cadetblue;
+  padding: .5rem;
+  max-width: 12rem;
+  color: white;
+}
+.contactinfo .philosophy p{
+  margin-right: 5rem;
+}
+.container .foot{
+  margin-top: 8rem;
+  display: flex;
+  background-color: azure;
+  align-items: center;
+  padding: 4rem;
+}
+.foot img{
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width : 1024px) {
+  .container{
+    max-width:100%;
+  }
+  .main-banner{
+    height: 22rem;
+  }
+  .bannerbox{
+    top: 0;
+  }
+  .bannertext{
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+  .bannertext h1{
+    font-size: 1.33rem;
+    padding:.75rem 4rem;
+  }
+  .philosophy{
+    margin-left: 2rem;
+  }
+  .appointments{
+    margin-right: 2rem;
+  }
 }
