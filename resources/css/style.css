@@ -43,6 +43,9 @@ color: white;
   padding-left: 1rem;
   color: white;
 }
+.menu{
+  display: none;
+}
 .bannertext{
   margin-top: 9rem;
   display: flex;
@@ -101,7 +104,7 @@ color: white;
   margin-right: 1rem;
 }
 
-@media only screen and (max-width : 1024px) {
+@media only screen and (max-width : 1024px) and (min-width: 768px){
   .container{
     max-width:100%;
   }
@@ -120,9 +123,77 @@ color: white;
     padding:.75rem 4rem;
   }
   .philosophy{
-    margin-left: 2rem;
+    margin-left: 4rem;
   }
   .appointments{
+    margin-right: 4rem;
+  }
+  .menu{
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px){
+  .container{
+    width: 100%;
+  }
+  .bannerbox{
+    top:0;
+  }
+  .main-banner{
+    background-position: 20%;
+  }
+  .main-banner{
+    height: 18rem;
+  }
+  nav span{
+    display: none;
+  }
+  .bannerlogo span{
+    display: none;
+  }
+  .menu{
+    display: flex;
+    text-align: right;
     margin-right: 2rem;
+    color: white;
+  }
+  .bannertext{
+    margin-top: 10rem;
+    display: block;
+    margin-right: 0;
+  }
+  .bannertext h1{
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .services{
+    display: block;
+    margin: 3.77rem 0;
+  }
+  .service{
+    margin: 1.54rem 0
+  }
+  .service div{
+    font-size: .77rem;
+  }
+  .contactinfo{
+    display: block;
+  }
+  .contactinfo h4{
+    max-width: 100%;
+  }
+  .contactinfo p{
+    margin-top: 1rem;
+    font-size: .77rem;
+    margin-bottom: 4rem;
+    padding-left: 1rem;
+  }
+  .container .foot{
+    display: block;
+    text-align: center;
+  }
+  .foot h4{
+    display: none;
   }
 }
